@@ -1,0 +1,91 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+.navbar{
+  background:#105134;
+  padding:15px 40px;
+}
+
+.menu{
+  display:flex;
+  list-style:none;
+  gap:30px;
+  color:#f3efef;
+}
+
+.menu li{
+  position:relative;
+}
+
+.menu-title{
+  cursor:pointer;
+  padding:10px;
+}
+
+/* Mega Menu */
+.mega-menu{
+  position:absolute;
+  top:100%;
+  left:0;
+  width:1100px;
+  background:#f0ebf0;
+  padding:30px;
+  display:none;
+  box-shadow:0 10px 30px rgba(97, 87, 87, 0.2);
+}
+
+.has-mega:hover .mega-menu{
+  display:block;
+}
+
+/* Top icons */
+.top-icons{
+  display:flex;
+  gap:40px;
+  margin-bottom:30px;
+}
+
+.icon{
+  text-align:center;
+  cursor:pointer;
+}
+
+.icon img{
+  width:80px;
+}
+
+.icon p{
+  margin-top:8px;
+}
+
+.icon:hover p{
+  color:#34c165;
+}
+
+/* Tabs */
+.tab{
+  display:none;
+}
+
+.tab.active{
+  display:block;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.grid a{
+  text-decoration:none;
+  color:#333;
+}
+
+.grid a:hover{
+  color:#1aa34a;
+}
